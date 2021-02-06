@@ -1,49 +1,20 @@
 <!DOCTYPE html>
-<html lang='pl'>
+<html lang="pl">
     <head>
         <title>Forum Gier Politycznych</title>
-
-        <meta charset='UTF-8' />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-
-        <link rel='stylesheet' href='style.css' />
     </head>
     <body>
-        <section id='section-1'>
-            <nav>
-                <h1>Forum Gier Politycznych</h1>
-            </nav>
-            <main>
-                <h1>Polski serwer RP</h1>
-                <div class='container'>
-                    <div class='inv'><a href='https://discord.gg/chQyHeg' target='_blank'>Dołącz do nas</a></div>
-                    <div class='ab'><a href='#section-2'>O nas</a></div>
-                </div>
-            </main>
-        </section>
-        <section id='section-2'>
-            <main>
-                <header>
-                    <h1>O nas</h1>
-                </header>
-                <div class='main-text'>
-                    Forum Gier Politycznych, kiedyś znane jako Symulator Sejmu, to serwer typu Role-Play o tematyce politycznej. Co edycje jest coś nowego. Na serwerze jest ogarnięty Zarząd, jak i niemała społeczność graczy. Tematyki Role-Play wybierane są poprzez głosowanie - co edycje głosowanie nad nową. Zainteresowany? <a href='https://discord.gg/chQyHeg' target='_blank'>Dołącz!</a>
-                </div>
-                <div class='container'>
-                    <div class='edycja'>
-                        <h1>Trwająca edycja</h1>
-                        <span>PRL 1976</span>
-                    </div>
-                    <div class='status-edycji'>
-                        <h1>Status edycji</h1>
-                        <span>Otwarta</span>
-                    </div>
-                </div>
-                <div class='lure'>
-                    <h1>O edycji</h1>
-                    <span>Minął półmetek tzw.  gierkowskiej dekady, czyli okresu sprawowania przez Edwarda Gierka władzy w latach 1970–1980, która charakteryzowała się w pierwszej połowie dynamicznym rozwojem gospodarczym Polski. Jednak propaganda sukcesu nie pozwalała ówczesnym władzom na jakąkolwiek korektę linii rozwojowej gospodarki – począwszy od 1976 nastąpił stopniowo upadek polityki wzrostu gospodarczego ekipy Edwarda Gierka. Szara rzeczywistość daje się we znaki obywatelom, wśród których wzrasta niezadowolenie z działań władzy ludowej. I trzeba tu jednoznacznie powiedzieć - życie w  PRL-u z dla zwykłego mieszkańca z poza elit politycznych nie było mlekiem i miodem płynące, ale codzienność miała jakiś klimat. Obywatele pracowali na utrzymanie, wielu zakładało rodziny, prowadzili też życie towarzyskie, a z czasem coraz chętniej wychodzili na ulicę żeby wyrazić swoje zdanie w przeróżnych rzeczach.. Może i Ty chciałbyś wcielić się w rolę mieszkańca komunistycznej Polski i prowadzić życie w tamtych czasach?</span>
-                </div>
-            </main>
-        </section>
+        <h1>Statystyki serwera</h1>
+        <div id='app'>
+            <p v-if='isVisible'>
+                {{ msg }}
+            </p>
+            <button @click='toggle'>
+                Pokaż statystyki
+            </button>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script src='app.js'></script>
     </body>
 </html>
