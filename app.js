@@ -3,9 +3,11 @@ let dscUsername;
 window.onload = () => {
     const fragment = new URLSearchParams(window.location.hash.slice(1));
 
+    console.log(fragment);
+	
     if(fragment.has('access_token')) {
         const accessToken = fragment.get("access_token");
-		const tokenType = fragment.get("token_type");
+	const tokenType = fragment.get("token_type");
 
         fetch('https://discord.com/api/users/@me', {
             headers: {
