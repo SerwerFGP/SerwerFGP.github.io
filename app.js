@@ -9,7 +9,7 @@ window.onload = () => {
 
         fetch('https://discord.com/api/users/@me', {
             headers: {
-                authorization: `${tokenType} ${accessToken}`;
+                authorization: `${tokenType} ${accessToken}`
             }
         }).then(res => res.json())
         .then(response => {
