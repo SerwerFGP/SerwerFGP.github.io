@@ -1,37 +1,18 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang='pl'>
     <head>
-        <meta charset="UTF-8">
-        <title>Serwer FGP</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+        <meta name='keywords' content='sejm, symulator sejmu, polityka, fgp, forum gier politycznych, roleplay, discord'>
+        <meta name='description' content='Projekt Symulator Sejmu to RolePlay odgrywane na platformie Discord.'>
+        <meta name='copyright' content='symultorsejmu.pl'>
+        <meta name='author' content='dawidePl'>
+        <meta name='og:title' content='symulatorsejmu.pl'>
+        <meta name='og:site_name' content='Symulator Sejmu'>
+
+        <title>Symulator Sejmu •︎ Strona Główna</title>
+
+        <link rel='icon' href='./img/SS.png'>
     </head>
-    <body>
-        <div id="info">
-            Ayo!
-        </div>
-        <a id="login" style="display: none" href="https://discord.com/api/oauth2/authorize?client_id=783081187530899506&redirect_uri=https%3A%2F%2Fserwerfgp.github.io%2F&response_type=token&scope=identify">Identify Yourself</a>
-
-        <script>
-            window.onload = () => {
-                const fragment = new URLSearchParams(window.location.hash.slice(1));
-
-                if(fragment.has("access_token")) {
-                    const accessToken = fragment.get("access_token");
-                    const tokenType = fragment.get("token_type");
-
-                    fetch('https://discord.com/api/users/@me', {
-                        headers: {
-                            authorization: `${tokenType} ${accessToken}`
-                        }
-                    }).then(res => res.json())
-                    .then(response => {
-                        const { username, discriminator } = response;
-
-                        document.getElementById('info').innerText = `${username}#${discriminator}`;
-                    }).catch(console.error);
-                }else {
-                    document.getElementById('login').style.display = 'block';
-                }
-            }
-        </script>
-    </body>
 </html>
