@@ -13,6 +13,10 @@ body {
     background-color: #24252A;
 }
 
+#mobile {
+    display: none;
+}
+
 li, a, button, .logo {
     font-family: 'Montserrat';
     font-weight: 400;
@@ -30,6 +34,7 @@ header {
 
 .logo {
     font-size: 24px;
+    z-index: 20;
 }
 
 nav {
@@ -60,4 +65,47 @@ button {
 
 button:hover {
     background-color: rgba(0, 136, 169, 0.8);
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #mobile nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #mobile #nav {
+        background-color: #131419;
+        width: 50vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #mobile #nav li {
+        list-style: none;
+    }
+
+    #mobile #nav li a {
+        text-transform: capitalize;
+        font-size: 24px;
+    }
+
+    #mobile #nav li:not(:first-child) {
+        padding-top: 2vh;
+    }
+
+    #mobile #nav ul {
+        margin-top: 16vh;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
 }
