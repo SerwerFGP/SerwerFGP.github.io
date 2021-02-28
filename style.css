@@ -34,6 +34,7 @@ header {
 
 #logo, #logo-mobile {
     font-size: 24px;
+    vertical-align: middle;
 }
 
 nav {
@@ -64,6 +65,25 @@ button {
 
 button:hover {
     background-color: rgba(0, 136, 169, 0.8);
+    cursor: pointer;
+}
+
+#mobile nav .menu-bar #logo-mobile {
+    vertical-align: middle;
+}
+
+#mobile .menu-bar #hamburger::before {
+    content: '\f0c9';
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 34px;
+    color: #EDF0F1;
+    vertical-align: text-top;
+}
+
+#mobile .menu-bar #hamburger:hover::before {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
@@ -75,7 +95,7 @@ button:hover {
         display: block;
     }
 
-    #mobile nav {
+    #mobile nav .menu-bar {
         display: flex;
         justify-content: space-between;
     }
@@ -114,4 +134,52 @@ button:hover {
     }
 }
 
-/* @media screen and (max-width: ) */
+@media screen and (max-width: 330px) {
+    #logo-mobile {
+        font-size: 20px;
+    }
+
+    #mobile #nav li a {
+        font-size: 20px;
+    }
+
+    #mobile .menu-bar #hamburger::before {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    #logo-mobile {
+        font-size: 16px;
+    }
+
+    #mobile #nav li a {
+        font-size: 16px;
+    }
+
+    #mobile .menu-bar i {
+        font-size: 24px;
+    }
+
+    #mobile .menu-bar #hamburger::before {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    #logo-mobile {
+        font-size: 14px;
+    }
+
+    #mobile #nav li a {
+        font-size: 14px;
+    }
+
+    #mobile .menu-bar i {
+        font-size: 22px;
+    }
+
+    #mobile .menu-bar #hamburger::before {
+        font-size: 24px;
+    }
+}
