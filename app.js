@@ -1,7 +1,3 @@
-window.onload = () => {
-    alert('Strona jest w fazie tworzenia.');
-}
-
 function mobileState() {
     const mobileNav = document.getElementById('nav');
     const logoMobile = document.getElementById('logo-mobile');
