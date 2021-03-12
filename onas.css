@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
     user-select: none;
+    font-display: initial;
 }
 
 body {
@@ -104,29 +105,57 @@ section h6 {
     font-weight: lighter;
     font-size: 22px;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 15vw;
+    padding-bottom: 5vh;
     margin-top: 2vh;
+    letter-spacing: 0.5px;
 }
 
-section a {
-    z-index: 1;
-    font-size: 24px;
-    font-weight: 400;
-    margin: 10vh 0 0 50%;
-    display: inline-block;
-    vertical-align: middle;
-    padding-bottom: 5px;
-    transform: translateX(-50%);
-    background-image: linear-gradient(#68BB59, #68BB59), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-    background-size: 0 5px, auto;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    transition: font-size 0.2s ease-in, padding 0.2s ease-in, background-size 0.2s ease-out;
+#card-section {
+    margin-bottom: 5vh;
 }
 
-section a:hover {
+#card-section #container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10vw;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+#card-section #container .card {
+    position: relative;
+    color: #EDF0F1;
+    font-weight: lighter;
     font-size: 26px;
-    background-size: 100% 5px, auto;
+    height: 320px;
+    width: 250px;
+    margin: 50px 0;
+    text-align: center;
+    transition: transform 0.4s ease;
+}
+
+#card-section #container .card:hover {
+    transform: scale(1.1);
+}
+
+#card-section #container .card p {
+    padding-top: 240px;
+}
+
+#card-section #container .first {
+    background-image: url('./img/img-2.jpg');
+    background-size: cover;
+}
+
+#card-section #container .second {
+    background-image: url('./img/img-1.jpg');
+    background-size: cover;
+}
+
+#card-section #container .third {
+    background-image: url('./img/img-3.jpg');
+    background-size: cover;
 }
 
 @media screen and (max-width: 900px) {
@@ -184,14 +213,6 @@ section a:hover {
     section h6 {
         font-size: 18px;
     }
-
-    section a {
-        font-size: 22px;
-    }
-
-    section a:hover {
-        font-size: 24px;
-    }
 }
 
 @media screen and (max-width: 330px) {
@@ -213,14 +234,6 @@ section a:hover {
     }
 
     section h6 {
-        font-size: 18px;
-    }
-
-    section a {
-        font-size: 16px;
-    }
-
-    section a:hover {
         font-size: 18px;
     }
 }
@@ -250,14 +263,6 @@ section a:hover {
     section h6 {
         font-size: 16px;
     }
-
-    section a {
-        font-size: 12px;
-    }
-
-    section a:hover {
-        font-size: 14px;
-    }
 }
 
 @media screen and (max-width: 200px) {
@@ -283,14 +288,6 @@ section a:hover {
     }
 
     section h6 {
-        font-size: 14px;
-    }
-
-    section a {
-        font-size: 12px;
-    }
-
-    section a:hover {
         font-size: 14px;
     }
 }

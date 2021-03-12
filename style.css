@@ -104,7 +104,7 @@ section h6 {
     margin-top: 2vh;
 }
 
-section a p {
+section a {
     z-index: 1;
     font-size: 24px;
     font-weight: 400;
@@ -120,7 +120,7 @@ section a p {
     transition: font-size 0.2s ease-in, padding 0.2s ease-in, background-size 0.2s ease-out;
 }
 
-section a p:hover {
+section a:hover {
     font-size: 26px;
     background-size: 100% 5px, auto;
 }
@@ -181,11 +181,11 @@ section a p:hover {
         font-size: 18px;
     }
 
-    section a p {
+    section a {
         font-size: 22px;
     }
 
-    section a p:hover {
+    section a:hover {
         font-size: 24px;
     }
 }
@@ -212,11 +212,11 @@ section a p:hover {
         font-size: 18px;
     }
 
-    section a p {
+    section a {
         font-size: 16px;
     }
 
-    section a p:hover {
+    section a:hover {
         font-size: 18px;
     }
 }
@@ -247,11 +247,11 @@ section a p:hover {
         font-size: 16px;
     }
 
-    section a p {
+    section a {
         font-size: 12px;
     }
 
-    section a p:hover {
+    section a:hover {
         font-size: 14px;
     }
 }
@@ -282,11 +282,11 @@ section a p:hover {
         font-size: 14px;
     }
 
-    section a p {
+    section a {
         font-size: 12px;
     }
 
-    section a p:hover {
+    section a:hover {
         font-size: 14px;
     }
 }
