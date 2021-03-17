@@ -17,17 +17,16 @@
         
         <link rel='icon' href='./img/SS.png'>
         <link rel='stylesheet' href='./template.css'>
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href='./prawo.css'>
     </head>
     <body>
         <header>
             <div id='logo'>Symulator Sejmu</div>
             <nav>
                 <ul>
-                    <li><a href='https://symulatorssejmu.pl/' id='current'>Dom</a></li>
+                    <li><a href='https://symulatorssejmu.pl/'>Dom</a></li>
                     <li><a href='./onas.html'>O Nas</a></li>
-                    <li><a href='./prawo.html'>Prawo</a></li>
+                    <li><a href='./prawo.html' id='current'>Prawo</a></li>
                     <li><a href=''>Media</a></li>
                 </ul>
             </nav>
@@ -42,20 +41,23 @@
             </nav>
             <div id='nav' style='margin-left: -60%;'>
                 <ul>
-                    <li><a href='https://symulatorssejmu.pl/' id='current'>Dom</a></li>
+                    <li><a href='https://symulatorssejmu.pl/'>Dom</a></li>
                     <li><a href='./onas.html'>O Nas</a></li>
-                    <li><a href='./prawo.html'>Prawo</a></li>
+                    <li><a href='./prawo.html' id='current'><bold>Prawo</a></li>
                     <li><a href=''>Media</a></li>
                     <li><a class='zaproszenie' href='https://discord.gg/qBMcXAbQHJ' target='_blank'>Discord</a></li>
                 </ul>
             </div>
         </header>
-        <section>
-            <h1>Największy polityczny serwer roleplay w Polsce</h1>
-            <h6>Wciel się w polityka i doprowadź swoją partię do zwycięstwa.</h6>
-
-            <a href='./onas.html'><p>Czytaj dalej</p></a>
+        <section id='s1'>
+            <h1>Obecna lista aktów prawnych</h1>
+            <h6>Lista aktów prawnych nie jest aktualizowana na żywo oraz nie zawiera długich ustaw.</h6>
         </section>
-        <script src='./app.js'></script>
+        <section id='akty'></section>
+
+        <script src='./app.js' typ="text/javascript"></script>
+        <script src='./prawo.js' type="text/javascript"></script>
+        <script src="./prawo.json" type="text/javascript" ></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </body>
 </html>
